@@ -103,28 +103,28 @@
                                                 </li>
                                                 <li class="lvl-1 col-md-3 col-lg-3 w-22"><a href="#;" class="site-nav lvl-1 menu-title">Shop Page</a>
                                                     <ul class="subLinks">
-                                                        <li class="lvl-2"><a href="shop-grid-view.html" class="site-nav lvl-2">Shop Grid View</a></li>
-                                                        <li class="lvl-2"><a href="shop-list-view.html" class="site-nav lvl-2">Shop List View</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('shop_grid_view') }}" class="site-nav lvl-2">Shop Grid View</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('shop_list_view') }}" class="site-nav lvl-2">Shop List View</a></li>
                                                         <li class="lvl-2"><a href="shop-left-sidebar.html" class="site-nav lvl-2">Shop Left Sidebar</a></li>
                                                         <li class="lvl-2"><a href="shop-right-sidebar.html" class="site-nav lvl-2">Shop Right Sidebar</a></li>
                                                         <li class="lvl-2"><a href="shop-top-filter.html" class="site-nav lvl-2">Shop Top Filter</a></li>
                                                         <li class="lvl-2"><a href="shop-masonry-grid.html" class="site-nav lvl-2">Shop Masonry Grid</a></li>
                                                         <li class="lvl-2"><a href="shop-with-category.html" class="site-nav lvl-2">Shop With Category</a></li>
-                                                        <li class="lvl-2"><a href="shop-grid-view.html" class="site-nav lvl-2">Classic Pagination</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('shop_grid_view') }}" class="site-nav lvl-2">Classic Pagination</a></li>
                                                         <li class="lvl-2"><a href="shop-right-sidebar.html" class="site-nav lvl-2">Infinite Scrolling</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="lvl-1 col-md-3 col-lg-3 w-22"><a href="#;" class="site-nav lvl-1 menu-title">Shop Other Page</a>
                                                     <ul class="subLinks">
-                                                        <li class="lvl-2"><a href="wishlist-style1.html" class="site-nav lvl-2">Wishlist Style1</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('wishlist') }}" class="site-nav lvl-2">Wishlist Style1</a></li>
                                                         <li class="lvl-2"><a href="wishlist-style2.html" class="site-nav lvl-2">Wishlist Style2</a></li>
                                                         <li class="lvl-2"><a href="compare-style1.html" class="site-nav lvl-2">Compare Style1</a></li>
                                                         <li class="lvl-2"><a href="compare-style2.html" class="site-nav lvl-2">Compare Style2</a></li>
-                                                        <li class="lvl-2"><a href="cart-style1.html" class="site-nav lvl-2">Cart Style1</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('cart_style1') }}" class="site-nav lvl-2">Cart Style1</a></li>
                                                         <li class="lvl-2"><a href="cart-style2.html" class="site-nav lvl-2">Cart Style2</a></li>
-                                                        <li class="lvl-2"><a href="checkout-style1.html" class="site-nav lvl-2">Checkout Style1</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('checkout_style1') }}" class="site-nav lvl-2">Checkout Style1</a></li>
                                                         <li class="lvl-2"><a href="checkout-style2.html" class="site-nav lvl-2">Checkout Style2</a></li>
-                                                        <li class="lvl-2"><a href="order-success.html" class="site-nav lvl-2">Order Success</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('order_success') }}" class="site-nav lvl-2">Order Success</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="lvl-1 col-md-3 col-lg-3 w-34 banner-col">
@@ -149,7 +149,7 @@
                                             <ul class="row mmWrapper">
                                                 <li class="lvl-1 col-md-3 col-lg-3"><a href="#;" class="site-nav lvl-1 menu-title">Product Page</a>
                                                     <ul class="subLinks">
-                                                        <li class="lvl-2"><a href="product-layout1.html" class="site-nav lvl-2">Product Layout1</a></li>
+                                                        <li class="lvl-2"><a href="{{ url_for('products') }}" class="site-nav lvl-2">Product Layout1</a></li>
                                                         <li class="lvl-2"><a href="product-layout2.html" class="site-nav lvl-2">Product Layout2</a></li>
                                                         <li class="lvl-2"><a href="product-layout3.html" class="site-nav lvl-2">Product Layout3</a></li>
                                                         <li class="lvl-2"><a href="product-layout4.html" class="site-nav lvl-2">Product Layout4</a></li>
@@ -177,13 +177,13 @@
                                                             <div class="product-wrap position-relative">
                                                                 <!-- Start Product Image -->
                                                                 <div class="product-image mb-0">
-                                                                    <a href="product-layout1.html" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
+                                                                    <a href="{{ url_for('products') }}" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
                                                                     <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
                                                                 </div>
                                                                 <!-- End Product Image -->
                                                                 <!-- Start Product Details -->
                                                                 <div class="product-details text-center">
-                                                                    <div class="product-name"><a class="fw-normal" href="product-layout1.html">Bodysuit Black</a></div>
+                                                                    <div class="product-name"><a class="fw-normal" href="{{ url_for('products') }}">Bodysuit Black</a></div>
                                                                     <div class="product-price">
                                                                         <span class="price old-price">$114.00</span><span class="price">$99.00</span>
                                                                     </div>
@@ -199,12 +199,12 @@
                                                             <div class="product-wrap position-relative">
                                                                 <!-- Start Product Image -->
                                                                 <div class="product-image mb-0">
-                                                                    <a href="product-layout1.html" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
+                                                                    <a href="{{ url_for('products') }}" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
                                                                 </div>
                                                                 <!-- End Product Image -->
                                                                 <!-- Start Product Details -->
                                                                 <div class="product-details text-center">
-                                                                    <div class="product-name"><a class="fw-normal" href="product-layout1.html">Drawstring Dress</a></div>
+                                                                    <div class="product-name"><a class="fw-normal" href="{{ url_for('products') }}">Drawstring Dress</a></div>
                                                                     <div class="product-price">
                                                                         <span class="price">$165.00</span>
                                                                     </div>
@@ -220,12 +220,12 @@
                                                             <div class="product-wrap position-relative">
                                                                 <!-- Start Product Image -->
                                                                 <div class="product-image mb-0">
-                                                                    <a href="product-layout1.html" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
+                                                                    <a href="{{ url_for('products') }}" class="product-img"><img class="rounded-0 blur-up lazyload" data-src="assets/images/megamenu/product1.jpg" src="assets/images/megamenu/product1.jpg" alt="product" title="Product" width="625" height="808" /></a>
                                                                 </div>
                                                                 <!-- End Product Image -->
                                                                 <!-- Start Product Details -->
                                                                 <div class="product-details text-center">
-                                                                    <div class="product-name"><a class="fw-normal" href="product-layout1.html">Realm Solid Backpack</a></div>
+                                                                    <div class="product-name"><a class="fw-normal" href="{{ url_for('products') }}">Realm Solid Backpack</a></div>
                                                                     <div class="product-price">
                                                                         <span class="price">$153.00</span>
                                                                     </div>
@@ -346,9 +346,9 @@
                                                         <li class="item empty w-100 text-center text-muted d-none">You don't have any items in your search.</li>
                                                         <li class="item">                                                       
                                                             <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                                                <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
+                                                                <div class="mini-image text-center"><a class="item-link" href="{{ url_for('products') }}"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
                                                                 <div class="ms-3 details text-left">
-                                                                    <div class="product-name"><a class="item-title" href="product-layout1.html">Oxford Cuban Shirt</a></div>
+                                                                    <div class="product-name"><a class="item-title" href="{{ url_for('products') }}">Oxford Cuban Shirt</a></div>
                                                                     <div class="product-price"><span class="old-price">$114.00</span><span class="price">$99.00</span></div>
                                                                     <div class="product-review d-flex align-items-center justify-content-start">
                                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
@@ -359,9 +359,9 @@
                                                         </li>
                                                         <li class="item">
                                                             <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                                                <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
+                                                                <div class="mini-image text-center"><a class="item-link" href="{{ url_for('products') }}"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
                                                                 <div class="ms-3 details text-left">
-                                                                    <div class="product-name"><a class="item-title" href="product-layout1.html">Cuff Beanie Cap</a></div>
+                                                                    <div class="product-name"><a class="item-title" href="{{ url_for('products') }}">Cuff Beanie Cap</a></div>
                                                                     <div class="product-price"><span class="price">$128.00</span></div>
                                                                     <div class="product-review d-flex align-items-center justify-content-start">
                                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
@@ -372,9 +372,9 @@
                                                         </li>
                                                         <li class="item">
                                                             <div class="mini-list-item d-flex align-items-center w-100 clearfix">
-                                                                <div class="mini-image text-center"><a class="item-link" href="product-layout1.html"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
+                                                                <div class="mini-image text-center"><a class="item-link" href="{{ url_for('products') }}"><img class="rounded-0 blur-up lazyload" data-src="assets/images/products/120x170.jpg" src="assets/images/products/120x170.jpg" alt="image" title="product" width="120" height="170" /></a></div>
                                                                 <div class="ms-3 details text-left">
-                                                                    <div class="product-name"><a class="item-title" href="product-layout1.html">Flannel Collar Shirt</a></div>
+                                                                    <div class="product-name"><a class="item-title" href="{{ url_for('products') }}">Flannel Collar Shirt</a></div>
                                                                     <div class="product-price"><span class="price">$99.00</span></div>
                                                                     <div class="product-review d-flex align-items-center justify-content-start">
                                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
@@ -401,7 +401,7 @@
                                             <li><a href="login.html"><i class="icon anm anm-sign-in-al"></i>Sign In</a></li>
                                             <li><a href="register.html"><i class="icon anm anm-user-al"></i>Register</a></li>
                                             <li><a href="my-account.html"><i class="icon anm anm-user-cil"></i>My Account</a></li>
-                                            <li><a href="wishlist-style1.html"><i class="icon anm anm-heart-l"></i>Wishlist</a></li>
+                                            <li><a href="{{ url_for('wishlist') }}"><i class="icon anm anm-heart-l"></i>Wishlist</a></li>
                                             <li><a href="compare-style1.html"><i class="icon anm anm-random-r"></i>Compare</a></li>
                                             <li><a href="login.html"><i class="icon anm anm-sign-out-al"></i>Sign out</a></li>
                                         </ul>
@@ -410,7 +410,7 @@
                             </div>
                             <!--End Account-->
                             <!--Wishlist-->
-                            <div class="wishlist-link iconset" title="Wishlist"><a href="wishlist-style1.html"><i class="hdr-icon icon anm anm-heart-l"></i><span class="wishlist-count">0</span></a></div>
+                            <div class="wishlist-link iconset" title="Wishlist"><a href="{{ url_for('wishlist') }}"><i class="hdr-icon icon anm anm-heart-l"></i><span class="wishlist-count">0</span></a></div>
                             <!--End Wishlist-->
                             <!--Minicart-->
                             <div class="header-cart iconset" title="Cart">
@@ -463,37 +463,37 @@
                             </li>
                             <li><a href="#;" class="site-nav">Shop Page <i class="icon anm anm-angle-down-l"></i></a>
                                 <ul class="lvl-3">
-                                    <li><a href="shop-grid-view.html" class="site-nav">Shop Grid View</a></li>
-                                    <li><a href="shop-list-view.html" class="site-nav">Shop List View</a></li>
+                                    <li><a href="{{ url_for('shop_grid_view') }}" class="site-nav">Shop Grid View</a></li>
+                                    <li><a href="{{ url_for('shop_list_view') }}" class="site-nav">Shop List View</a></li>
                                     <li><a href="shop-left-sidebar.html" class="site-nav">Shop Left Sidebar</a></li>
                                     <li><a href="shop-right-sidebar.html" class="site-nav">Shop Right Sidebar</a></li>
                                     <li><a href="shop-top-filter.html" class="site-nav">Shop Top Filter</a></li>
                                     <li><a href="shop-masonry-grid.html" class="site-nav">Shop Masonry Grid</a></li>
                                     <li><a href="shop-with-category.html" class="site-nav">Shop With Category</a></li>
-                                    <li><a href="shop-grid-view.html" class="site-nav">Classic Pagination</a></li>
+                                    <li><a href="{{ url_for('shop_grid_view') }}" class="site-nav">Classic Pagination</a></li>
                                     <li><a href="shop-right-sidebar.html" class="site-nav last">Infinite Scrolling</a></li>
                                 </ul>
                             </li>
                             <li><a href="#;" class="site-nav">Shop Other Page <i class="icon anm anm-angle-down-l"></i></a>
                                 <ul class="lvl-3">
-                                    <li><a href="wishlist-style1.html" class="site-nav">Wishlist Style1</a></li>
+                                    <li><a href="{{ url_for('wishlist') }}" class="site-nav">Wishlist Style1</a></li>
                                     <li><a href="wishlist-style2.html" class="site-nav">Wishlist Style2</a></li>
                                     <li><a href="compare-style1.html" class="site-nav">Compare Style1</a></li>
                                     <li><a href="compare-style2.html" class="site-nav">Compare Style2</a></li>
-                                    <li><a href="cart-style1.html" class="site-nav">Cart Style1</a></li>
+                                    <li><a href="{{ url_for('cart_style1') }}" class="site-nav">Cart Style1</a></li>
                                     <li><a href="cart-style2.html" class="site-nav">Cart Style2</a></li>
-                                    <li><a href="checkout-style1.html" class="site-nav">Checkout Style1</a></li>
+                                    <li><a href="{{ url_for('checkout_style1') }}" class="site-nav">Checkout Style1</a></li>
                                     <li><a href="checkout-style2.html" class="site-nav">Checkout Style2</a></li>
-                                    <li><a href="order-success.html" class="site-nav last">Order Success</a></li>
+                                    <li><a href="{{ url_for('order_success') }}" class="site-nav last">Order Success</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li class="lvl1 parent megamenu"><a href="product-layout1.html">Product <i class="icon anm anm-angle-down-l"></i></a>
+                    <li class="lvl1 parent megamenu"><a href="{{ url_for('products') }}">Product <i class="icon anm anm-angle-down-l"></i></a>
                         <ul class="lvl-2">
-                            <li><a href="product-layout1.html" class="site-nav">Product Page <i class="icon anm anm-angle-down-l"></i></a>
+                            <li><a href="{{ url_for('products') }}" class="site-nav">Product Page <i class="icon anm anm-angle-down-l"></i></a>
                                 <ul class="lvl-3">
-                                    <li><a href="product-layout1.html" class="site-nav">Product Layout1</a></li>
+                                    <li><a href="{{ url_for('products') }}" class="site-nav">Product Layout1</a></li>
                                     <li><a href="product-layout2.html" class="site-nav">Product Layout2</a></li>
                                     <li><a href="product-layout3.html" class="site-nav">Product Layout3</a></li>
                                     <li><a href="product-layout4.html" class="site-nav">Product Layout4</a></li>
@@ -629,11 +629,11 @@
                                             <div class="grid-lb grid-view-item top rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Tops</div>
-                                                    <a class="product-name title" href="product-layout1.html">Oxford Cuban Shirt</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Oxford Cuban Shirt</a>
                                                     <div class="product-price my-1">
                                                         <span class="price old-price">$114.00</span><span class="price ps-2">$99.00</span>
                                                     </div>
@@ -641,7 +641,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">3 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -660,11 +660,11 @@
                                             <div class="grid-lb grid-view-item bottom rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Clothing</div>
-                                                    <a href="product-layout1.html" class="title">Cuff Beanie Cap</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Cuff Beanie Cap</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$128.00</span>
                                                     </div>
@@ -672,7 +672,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
                                                         <span class="caption hidden ms-1">8 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -691,11 +691,11 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Footwear</div>
-                                                    <a href="product-layout1.html" class="title">Flannel Collar Shirt</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Flannel Collar Shirt</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$99.00</span>
                                                     </div>
@@ -703,7 +703,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">10 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -722,11 +722,11 @@
                                             <div class="grid-lb grid-view-item right rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Sunglasses</div>
-                                                    <a class="product-name title" href="product-layout1.html">Cotton Hooded Hoodie</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Cotton Hooded Hoodie</a>
                                                     <div class="product-price my-1">
                                                         <span class="price old-price">$198.00</span><span class="price">$99.00</span>
                                                     </div>
@@ -734,7 +734,7 @@
                                                         <i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">12 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -744,11 +744,11 @@
                                             <div class="grid-lb grid-view-item right rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Fashion</div>
-                                                    <a class="product-name title" href="product-layout1.html">Hooded Neck Hoodies</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Hooded Neck Hoodies</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$39.00</span>
                                                     </div>
@@ -756,7 +756,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">3 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -775,11 +775,11 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Bags</div>
-                                                    <a class="product-name title" href="product-layout1.html">Foldable Duffel Bag</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Foldable Duffel Bag</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$299.00</span>
                                                     </div>
@@ -787,7 +787,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">15 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -806,11 +806,11 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Shoes</div>
-                                                    <a class="product-name title" href="product-layout1.html">High-Waisted Pant</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">High-Waisted Pant</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$139.00</span>
                                                     </div>
@@ -818,7 +818,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">11 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -837,11 +837,11 @@
                                             <div class="grid-lb grid-view-item right rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Electronic</div>
-                                                    <a class="product-name title" href="product-layout1.html">Narror Neck Tie</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Narror Neck Tie</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$134.00</span>
                                                     </div>
@@ -849,7 +849,7 @@
                                                         <i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">17 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -868,11 +868,11 @@
                                             <div class="grid-lb grid-view-item top rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Tools &amp; Parts</div>
-                                                    <a class="product-name title" href="product-layout1.html">Portable Auto Lance</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Portable Auto Lance</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$99.00</span>
                                                     </div>
@@ -880,7 +880,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">19 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -890,11 +890,11 @@
                                             <div class="grid-lb grid-view-item right rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Jewelry</div>
-                                                    <a class="product-name title" href="product-layout1.html">Silver Couple Rings</a>
+                                                    <a class="product-name title" href="{{ url_for('products') }}">Silver Couple Rings</a>
                                                     <div class="product-price my-1">
                                                         <span class="price">$167.00</span>
                                                     </div>
@@ -902,7 +902,7 @@
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i>
                                                         <span class="caption hidden ms-1">7 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -921,17 +921,17 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Jeans</div>
-                                                    <a href="product-layout1.html" class="title">Sleeve Round T-Shirt</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Sleeve Round T-Shirt</a>
                                                     <div class="product-price my-1"><span class="price">$154.00</span></div>
                                                     <div class="product-review d-flex align-items-center justify-content-center my-2">
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">19 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -941,17 +941,17 @@
                                             <div class="grid-lb grid-view-item right rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">T-Shirt</div>
-                                                    <a href="product-layout1.html" class="title">Backpack Laptop Bag</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Backpack Laptop Bag</a>
                                                     <div class="product-price my-1"><span class="price">$121.00</span></div>
                                                     <div class="product-review d-flex align-items-center justify-content-center my-2">
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">6 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -970,17 +970,17 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Mens</div>
-                                                    <a href="product-layout1.html" class="title">Cotton Casual Tshirt</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Cotton Casual Tshirt</a>
                                                     <div class="product-price my-1"><span class="price">$167.00</span></div>
                                                     <div class="product-review d-flex align-items-center justify-content-center my-2">
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">13 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1000,17 +1000,17 @@
                                             <div class="grid-lb grid-view-item left rounded-0">
                                                 <span class="btn-shop-close"><i class="icon anm anm-times-r"></i></span>
                                                 <div class="pro-img">
-                                                    <a href="product-layout1.html" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
+                                                    <a href="{{ url_for('products') }}" class="rounded-0"><img class="rounded-0 blur-up lazyloaded" data-src="assets/images/lookbook/product1.jpg" src="assets/images/lookbook/product1.jpg" alt="product" width="130" height="170" /></a>     	
                                                 </div>
                                                 <div class="detail text-center">
                                                     <div class="product-vendor">Sneakers</div>
-                                                    <a href="product-layout1.html" class="title">Ankle Casual Pants</a>
+                                                    <a href="{{ url_for('products') }}" class="title">Ankle Casual Pants</a>
                                                     <div class="product-price my-1"><span class="price">$125.00</span></div>
                                                     <div class="product-review d-flex align-items-center justify-content-center my-2">
                                                         <i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star"></i><i class="icon anm anm-star-o"></i>
                                                         <span class="caption hidden ms-1">20 Reviews</span>
                                                     </div>
-                                                    <a href="cart-style1.html" class="btn btn btn-sm">Add To Cart</a>
+                                                    <a href="{{ url_for('cart_style1') }}" class="btn btn btn-sm">Add To Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1144,11 +1144,11 @@
                     <div class="minicart-content">
                         <ul class="m-0 clearfix">
                             <li class="item d-flex justify-content-center align-items-center">
-                                <a class="product-image rounded-0" href="product-layout1.html">
+                                <a class="product-image rounded-0" href="{{ url_for('products') }}">
                                     <img class="rounded-0 blur-up lazyload" data-src="assets/images/products/cart-product-img1.jpg" src="assets/images/products/cart-product-img1.jpg" alt="product" title="Product" width="120" height="170" />
                                 </a>
                                 <div class="product-details">
-                                    <a class="product-title" href="product-layout1.html">Women Sandals</a>
+                                    <a class="product-title" href="{{ url_for('products') }}">Women Sandals</a>
                                     <div class="variant-cart my-2">Black / XL</div>
                                     <div class="priceRow">
                                         <div class="product-price">
@@ -1167,11 +1167,11 @@
                                 </div>
                             </li>
                             <li class="item d-flex justify-content-center align-items-center">
-                                <a class="product-image rounded-0" href="product-layout1.html">
+                                <a class="product-image rounded-0" href="{{ url_for('products') }}">
                                     <img class="rounded-0 blur-up lazyload" data-src="assets/images/products/cart-product-img1.jpg" src="assets/images/products/cart-product-img1.jpg" alt="product" title="Product" width="120" height="170" />
                                 </a>
                                 <div class="product-details">
-                                    <a class="product-title" href="product-layout1.html">Sleeve Round T-Shirt</a>
+                                    <a class="product-title" href="{{ url_for('products') }}">Sleeve Round T-Shirt</a>
                                     <div class="variant-cart my-2">Yellow / M</div>
                                     <div class="priceRow">
                                         <div class="product-price">
@@ -1208,8 +1208,8 @@
                             <label for="prTearm"> I agree with the </label><a href="#" class="ms-1 text-link">Terms &amp; conditions</a>
                         </div>
                         <div class="minicart-action d-flex mt-3">
-                            <a href="checkout-style1.html" class="proceed-to-checkout btn btn-primary w-50 me-1">Check Out</a>
-                            <a href="cart-style1.html" class="cart-btn btn btn-secondary w-50 ms-1">View Cart</a>
+                            <a href="{{ url_for('checkout_style1') }}" class="proceed-to-checkout btn btn-primary w-50 me-1">Check Out</a>
+                            <a href="{{ url_for('cart_style1') }}" class="cart-btn btn btn-secondary w-50 ms-1">View Cart</a>
                         </div>
                     </div>
                 </div>
